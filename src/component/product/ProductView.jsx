@@ -22,7 +22,7 @@ function ProductView({ productData }) {
         <p className="product-description">{productData.description}</p>
 
         <button className="product-cart_btn" onClick={handleAddToCart}>
-          Add to Cart
+          Adicionar ao carrinho
         </button>
       </div>
     </div>
