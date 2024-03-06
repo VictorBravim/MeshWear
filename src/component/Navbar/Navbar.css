@@ -6,30 +6,31 @@
   height: var(--nav-height);
   display: flex;
 }
+
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1.8rem;
-  /* padding: 24px 0px; */
 }
+
 .nav-link_container {
   display: flex;
   gap: 42px;
 }
+
 .nav-overlay {
-  /* display: none; */
   min-height: calc(100vh - var(--nav-height));
   width: 100%;
   position: absolute;
   top: var(--nav-height);
   left: 0;
-  background: black;
+  background: rgb(255, 255, 255);
   opacity: 0.2;
-
   z-index: 99;
   display: none;
 }
+
 .brand-name,
 .nav-link,
 .nav-link span {
@@ -42,7 +43,9 @@
   position: relative;
   display: block;
   cursor: pointer;
+  color: #fff;
 }
+
 .cart-counter {
   position: absolute;
   left: 100%;
@@ -53,11 +56,10 @@
   height: 14px;
   width: 14px;
   text-align: center;
-  background-color: black;
-  color: white;
-
-  /* border: 1px solid black; */
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
+
 .visible .cart-slide_overlay {
   background-color: #000;
   opacity: 0.2;
@@ -68,6 +70,7 @@
   left: 0px;
   z-index: 999;
 }
+
 .nav-secondary_btn {
   position: absolute;
   display: flex;
@@ -75,6 +78,7 @@
   flex-direction: column;
   display: none;
 }
+
 .nav-secondary_btn span {
   height: 2px;
   width: 20px;
@@ -83,9 +87,11 @@
   border-radius: 6px;
   transition: transform 0.2s;
 }
+
 .nav-open .nav-secondary_btn span:nth-child(1) {
   transform: translateY(6px) rotate(45deg);
 }
+
 .nav-open .nav-secondary_btn span:nth-child(2) {
   width: 0px;
 }
@@ -99,14 +105,17 @@
     gap: 36px;
   }
 }
+
 @media (max-width: 800px) {
   .header {
     border-bottom: 1px solid #999;
   }
+
   .brand-name {
     left: 50%;
     transform: translateX(-50%);
   }
+
   .nav-link_container {
     z-index: 999;
     position: absolute;
@@ -118,15 +127,18 @@
     gap: 0px;
     min-height: calc(100vh - var(--nav-height));
     background-color: #fff;
+
     .nav-link {
       padding: 0px 40px;
       border-bottom: 1px solid var(--primary-background);
     }
+
     .nav-link a {
       padding: 20px 0px;
       display: block;
     }
   }
+
   .nav-open .nav-link_container {
     transform: translateX(0%);
   }
@@ -136,10 +148,12 @@
     margin: 0 !important;
     padding: 0px 30px;
   }
+
   .nav-secondary_btn {
     display: flex;
     cursor: pointer;
   }
+
   .nav-open .nav-overlay {
     display: block;
   }

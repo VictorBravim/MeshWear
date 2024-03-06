@@ -6,17 +6,17 @@
 }
 :root {
   font-size: 62.5%;
-  --primary-background: #f3f3f3;
+  --primary-background: #1b1b1b;
 
-  --primary-background: #eee;
-  --nav-height: 60px;
+  --primary-background: #000000;
+  --nav-height: 80px;
 }
 body {
   background-color: var(--primary-background);
 }
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 li {
   list-style: none;

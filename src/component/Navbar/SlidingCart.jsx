@@ -26,7 +26,7 @@ function CartTop({ toggleShowCart }) {
   return (
     <div className="cart-top">
       <ShoppingCart size={22} />
-      <h2>Your Shopping Carts</h2>
+      <h2>Seu carrinho de compras</h2>
       <div className="close-shopping-cart" onClick={toggleShowCart}>
         <X size="22px" />
       </div>
@@ -50,7 +50,7 @@ function CartMain({ cart, addProductQuantity, removeFromCart }) {
     <div className="cart-main_container">
       {products.length < 1 ? (
         <div style={{ textAlign: "center", fontSize: "1.6rem" }}>
-          Your cart is empty :({" "}
+          Seu carrinho está vazio :({" "}
         </div>
       ) : (
         products
@@ -74,9 +74,9 @@ function CartProducts({ product, addProductQuantity, removeFromCart }) {
       <img src={product.image} />
       <div className="cart-product_info">
         <h3>{product.title}</h3>
-        <p>Category: {product.category}</p>
+        <p>Categoria: {product.category}</p>
         <p className="qty">
-          Qty:
+          Qtd:
           <input
             type="number"
             value={product.qty}
@@ -86,7 +86,7 @@ function CartProducts({ product, addProductQuantity, removeFromCart }) {
         </p>
       </div>
       <p className="cart-product_price">
-        ${(product.price * product.qty).toFixed(2)}
+        R${(product.price * product.qty).toFixed(2)}
       </p>
       <span className="cart-product_x" onClick={removeProduct}>
         <X size="16px" />
@@ -105,7 +105,7 @@ function CartCheckOut({ cart, toggleShowCart }) {
       <h3>Checkout</h3>
       <p>${totalPrice.toFixed(2)}</p>
       <Link to="checkout" onClick={toggleShowCart}>
-        Go to Checkout
+        Finalizar Compra
       </Link>
     </div>
   );
