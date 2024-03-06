@@ -32,8 +32,6 @@ function ExploreProduct() {
     async function getData() {
       let res = await fetchFromApi("products");
       function getFilteredData() {
-        // if both men and women checkbox are not true than load both men's and women's clothing
-        // we are filtering this since the default request also provide result for category that we don't want
         if (!checkBoxState.men && !checkBoxState.women) {
           let filteredData = res.filter((product) => {
             return (

@@ -6,9 +6,11 @@
   gap: 12px;
   justify-content: flex-end;
 }
+
 .price-filter_wrapper label {
   font-size: 14px;
   font-weight: 600;
+  color: #fff;
 }
 
 @media (max-width: 550px) {

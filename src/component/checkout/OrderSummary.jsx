@@ -14,23 +14,23 @@ function OrderSummary() {
 
   return (
     <div className="order-summary_container">
-      <h3>Order Summary</h3>
+      <h3>Resumo do pedido</h3>
       <div className="order-summary">{allSoloProducts}</div>
       <div className="order-total solo-bill">
         <p>Total</p>
-        <span>${totalPrice.toFixed(2)}</span>
+        <span>R${totalPrice.toFixed(2)}</span>
       </div>
     </div>
   );
 }
-
+  
 function SoloBill({ product }) {
   return (
     <div className="solo-bill">
       <p>
         <b>{product.qty}</b> * <b>{product.title}</b>
       </p>
-      <span>${(product.qty * product.price).toFixed(2)}</span>
+      <span>R${(product.qty * product.price).toFixed(2)}</span>
     </div>
   );
 }

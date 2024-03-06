@@ -4,6 +4,7 @@
   position: sticky;
   top: 0px;
 }
+
 .select-category_container h4 {
   font-weight: 500;
   font-size: 1.5rem;
@@ -11,13 +12,16 @@
   border-bottom: 1px solid #c2c2c2;
   padding-bottom: 4px;
   pointer-events: none;
+  color: #fff;
 }
+
 .category-option {
   display: flex;
   align-items: center;
   gap: 10px;
   font-size: 1.4rem;
   padding-top: 10px;
+  color: #fff;
 }
 
 @media (max-width: 800px) {
@@ -34,10 +38,12 @@
     border-radius: 6px;
     cursor: pointer;
     border: 1px solid #999;
+
     h4 {
       border-bottom: none;
       pointer-events: initial;
     }
+
     div {
       display: none;
       position: absolute;
@@ -48,13 +54,15 @@
       flex-direction: column;
       border: 1px solid #d3d0d0;
     }
+
     .category-option {
       padding-top: 0px;
     }
+
     div.open {
       display: flex;
     }
   }
 }
-@media (max-width: 550px) {
-}
+
+@media (max-width: 550px) {}

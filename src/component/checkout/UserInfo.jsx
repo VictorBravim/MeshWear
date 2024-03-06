@@ -17,7 +17,7 @@ function UserInfo() {
 function ContactInformation() {
   return (
     <div className="contact-info_container">
-      <h3>Contact Information</h3>
+      <h3>Informações de contato</h3>
       <input type="email" placeholder="Email" />
     </div>
   );
@@ -31,25 +31,25 @@ function ShippingAddress() {
 
   function checkoutHandler() {
     if (cart.length < 1) {
-      toast.error("Your shopping list is Emtpy");
+      toast.error("Sua lista de compras está vazia");
       return;
     }
     let totalPrice = cart.reduce((acc, cur) => {
       return acc + cur.qty * cur.price;
     }, 0);
     if (totalPrice < 1) {
-      toast.error("Cannot process order value of zero(0).");
+      toast.error("Não é possível processar o valor do pedido igual a zero (0).");
       return;
     }
 
     emptyCart();
-    toast.success("Checked out");
+    toast.success("Check-out");
     navigate("/");
   }
 
   return (
     <div className="shipping-address_container">
-      <h3>Shipping Address</h3>
+      <h3>Endereço para envio</h3>
       <div className="shipping-address_wrapper">
         <input type="name" placeholder="First name" id="firstname" />
         <input type="name" placeholder="Last name" id="lastname" />

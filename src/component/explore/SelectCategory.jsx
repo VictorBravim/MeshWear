@@ -10,7 +10,7 @@ function SelectCategory({ checkBoxState, handleCheckBox }) {
 
   return (
     <div className="select-category_container">
-      <h4 onClick={handleCategoryClick}>Category</h4>
+      <h4 onClick={handleCategoryClick}>Categoria</h4>
       <div className={isOpen ? "open" : ""}>
         <span className="category-option">
           <input
@@ -20,7 +20,7 @@ function SelectCategory({ checkBoxState, handleCheckBox }) {
             checked={checkBoxState.men}
             onChange={handleCheckBox}
           />
-          <label htmlFor="category-men">Men</label>
+          <label htmlFor="category-men">Homen</label>
         </span>
         <span className="category-option">
           <input
@@ -30,7 +30,7 @@ function SelectCategory({ checkBoxState, handleCheckBox }) {
             checked={checkBoxState.women}
             onChange={handleCheckBox}
           />
-          <label htmlFor="category-women">Women</label>
+          <label htmlFor="category-women">Mulher</label>
         </span>
       </div>
     </div>

@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+
   input {
     width: 100%;
     padding: 12px 10px;
@@ -10,14 +11,17 @@
     outline: none;
     border-radius: 10px;
   }
+
   input:focus {
     border: 1px solid black;
   }
 }
+
 .user-info_container h3 {
   font-size: 1.6rem;
   margin-bottom: 10px;
 }
+
 .shipping-address_wrapper {
   display: flex;
   justify-content: flex-end;
@@ -30,6 +34,7 @@
 #lastname {
   width: calc(50% - calc(var(--gap) / 2));
 }
+
 .checkout-btn {
   width: 60%;
   padding: 10px;
@@ -41,6 +46,7 @@
   transition: all 0.3s;
   font-size: 1.4rem;
 }
+
 .checkout-btn:hover {
   background-color: #303030;
 }
