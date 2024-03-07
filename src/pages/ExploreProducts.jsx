@@ -32,6 +32,7 @@ function ExploreProduct() {
     async function getData() {
       let res = await fetchFromApi("products");
       function getFilteredData() {
+
         if (!checkBoxState.men && !checkBoxState.women) {
           let filteredData = res.filter((product) => {
             return (

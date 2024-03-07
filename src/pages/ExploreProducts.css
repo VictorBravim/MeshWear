@@ -4,6 +4,7 @@
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
 .products-container {
   display: grid;
   width: 80%;
@@ -12,11 +13,13 @@
   gap: 16px;
   padding-right: 20px;
 }
+
 @media (max-width: 800px) {
   .product-main {
     justify-content: center;
     margin-top: 40px;
   }
+
   .products-container {
     margin-top: 26px;
     grid-template-columns: 1fr 1fr;
