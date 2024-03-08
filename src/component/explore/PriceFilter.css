@@ -13,6 +13,19 @@
   color: #fff;
 }
 
+select {
+  appearance: none;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 2px;
+  text-align: center;
+  background-image: url('/src/assets/images/arrow.webp');
+  background-size: 5%;
+  background-position: right 10px top 50%;
+  background-repeat: no-repeat;
+}
+
 @media (max-width: 550px) {
   #price-filter {
     width: 20vw;

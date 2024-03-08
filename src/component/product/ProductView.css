@@ -65,8 +65,8 @@
 .product-cart_btn {
   width: 20rem;
   padding: 1.4rem;
-  background-color: black;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: #000;
   border: none;
   border-radius: 30px;
   font-size: 1.8rem;
@@ -78,6 +78,7 @@
 .product-cart_btn:hover {
   scale: 1.01;
   background-color: #1a1a1a;
+  color: #fff;
 }
 
 @media (max-width: 800px) {
