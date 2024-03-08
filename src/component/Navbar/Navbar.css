@@ -71,6 +71,10 @@
   z-index: 999;
 }
 
+.nav-secondary {
+  margin-left: 4%;
+}
+
 .nav-secondary_btn {
   position: absolute;
   display: flex;

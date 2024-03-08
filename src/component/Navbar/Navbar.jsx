@@ -29,7 +29,7 @@ function CartButton({ toggleShowCart }) {
 
   return (
     <span onClick={toggleShowCart} className="cart-icon">
-      <ShoppingCart size={22} />
+      <ShoppingCart size={25} />
       <div className="cart-counter">{totalCartQty}</div>
     </span>
   );
@@ -45,7 +45,7 @@ function Navigations({ toggleShowCart }) {
   return (
     <nav className={`nav container ${isNavOpen ? "nav-open" : ""}`}>
       <span className="brand-name">
-        <Link to="/">MeshStore</Link>
+        <Link to="/">MeshWear</Link>
       </span>
       <ul className="nav-link_container">
         <li className="nav-link">
