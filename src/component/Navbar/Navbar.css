@@ -147,6 +147,7 @@
     .nav-link a {
       padding: 20px 0px;
       display: block;
+      color: #000;
     }
   }
 
@@ -163,6 +164,10 @@
   .nav-secondary_btn {
     display: flex;
     cursor: pointer;
+  }
+
+  .nav-secondary_btn span {
+    background: #fff;
   }
 
   .nav-open .nav-overlay {

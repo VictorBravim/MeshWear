@@ -12,6 +12,7 @@
   place-items: center;
   gap: 16px;
   padding-right: 20px;
+  margin-top: 20px;
 }
 
 @media (max-width: 800px) {
@@ -22,7 +23,6 @@
 
   .products-container {
     margin-top: 26px;
-    grid-template-columns: 1fr 1fr;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 }
