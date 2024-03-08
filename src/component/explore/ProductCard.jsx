@@ -25,7 +25,7 @@ function ProductCard({ product }) {
           <button className="add-cart_btn" onClick={handleAddToCart}>
             Adicionar ao carrinho
           </button>
-          <b className="product-card_price">${product?.price}</b>
+          <b className="product-card_price">R${product?.price}</b>
         </span>
       </div>
     </div>

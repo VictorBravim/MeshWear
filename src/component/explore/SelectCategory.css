@@ -40,8 +40,13 @@
     border: 1px solid #999;
 
     h4 {
+      color: #000;
       border-bottom: none;
       pointer-events: initial;
+    }
+
+    label {
+      color: #000;
     }
 
     div {

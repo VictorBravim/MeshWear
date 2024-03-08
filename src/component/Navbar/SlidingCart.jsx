@@ -103,7 +103,7 @@ function CartCheckOut({ cart, toggleShowCart }) {
   return (
     <div className="cart-checkout_container">
       <h3>Checkout</h3>
-      <p>${totalPrice.toFixed(2)}</p>
+      <p>R${totalPrice.toFixed(2)}</p>
       <Link to="checkout" onClick={toggleShowCart}>
         Finalizar Compra
       </Link>

@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
   gap: 20px;
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 100%);
   --image-wrapper-width: 55%;
 }
 
@@ -11,8 +11,7 @@
   position: relative;
   justify-content: center;
   height: 90%;
-  height: clamp(260px, 90%, 380px);
-
+  height: 120%;
   border: none;
   width: var(--image-wrapper-width);
   overflow: hidden;
@@ -25,7 +24,7 @@
   transform: translateX(-50%);
   background-color: #fff;
   width: 90%;
-  height: 90%;
+  height: 100%;
   z-index: -1;
   border-radius: 32px;
 }
