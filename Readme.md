@@ -1,4 +1,4 @@
-# Documentação do Projeto E-commerce
+# Projeto E-commerce - MeshWear
 
 ![Sem título 1](https://github.com/VictorBravim/MeshWear/assets/122113588/3b1f24a8-9110-4203-8f6c-e088495bfcf7)
 
