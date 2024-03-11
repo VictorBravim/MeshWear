@@ -8,6 +8,7 @@
   height: auto;
   filter: grayscale(100%);
   transition: filter 0.3s ease; 
+  border-radius: 10px;
 }
 
 .photoshoot-container img:hover {

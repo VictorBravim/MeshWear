@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import "./HomePhotoShoot.css";
+import "./HomeFoto.css";
 
 import photo1 from "/src/assets/img/mulher.png";
 import photo2 from "/src/assets/img/homen.png";
@@ -8,7 +8,7 @@ import photo2 from "/src/assets/img/homen.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function HomePhotoShoot() {
+function HomeFoto() {
   const images = [photo1, photo2];
 
   const settings = {
@@ -32,4 +32,4 @@ function HomePhotoShoot() {
   );
 }
 
-export default HomePhotoShoot;
+export default HomeFoto;
