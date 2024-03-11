@@ -66,7 +66,7 @@ function CartProducts({ product, addProductQuantity, removeFromCart }) {
 
   function removeProduct() {
     removeFromCart(product.id);
-    toast.error("Removed from Cart ");
+    toast.error("Removido do carrinho ");
   }
 
   return (

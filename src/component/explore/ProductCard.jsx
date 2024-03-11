@@ -8,7 +8,7 @@ function ProductCard({ product }) {
 
   function handleAddToCart() {
     addToCart(product);
-    toast.success("Added to Cart");
+    toast.success("Adicionado ao carrinho");
   }
 
   return (
