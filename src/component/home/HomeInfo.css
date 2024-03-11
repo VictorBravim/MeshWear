@@ -1,8 +1,16 @@
+.home-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .info-txt h2 {
   font-size: clamp(3.4rem, 4vw + 1rem, 5.2rem);
   font-family: "Bebas Neue", sans-serif;
   line-height: 1;
   color: #fff;
+  text-align: center;
 }
 
 .info-txt p {
@@ -10,6 +18,7 @@
   font-weight: 500;
   margin-top: 4px;
   color: #fff;
+  text-align: center;
 }
 
 .explore-clothing_btn {
