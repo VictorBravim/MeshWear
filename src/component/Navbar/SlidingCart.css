@@ -80,16 +80,27 @@
   text-transform: capitalize;
   font-weight: bold;
   opacity: 0.6;
+  font-size: 1.2em;
 }
 
-.cart-product_info .qty {
+.cart-product_info .qtd {
   display: flex;
   align-items: center;
-  gap: 6px;
-
+  gap: 7px;
+  
   input {
     width: 5ch;
   }
+}
+
+.minus {
+  width: 20px;
+  height: 20px;
+}
+
+.maximus {
+  width: 20px;
+  height: 20px;
 }
 
 .cart-product_price {
@@ -103,10 +114,10 @@
 
 .cart-product_x {
   position: absolute;
-  top: 3px;
-  right: 0px;
+  top: 55px;
+  right: 5px;
   cursor: pointer;
-  color: #fff;
+  color: #ff0000;
 }
 
 .cart-checkout_container {

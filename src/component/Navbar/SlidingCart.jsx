@@ -60,29 +60,32 @@ function CartMain({ cart, addProductQuantity, removeFromCart }) {
 }
 
 function CartProducts({ product, addProductQuantity, removeFromCart }) {
-  function inputHandler(e) {
-    addProductQuantity(product.id, Number(e.target.value));
+  function incrementQuantity() {
+    addProductQuantity(product.id, product.qty + 1);
+  }
+
+  function decrementQuantity() {
+    if (product.qty > 1) {
+      addProductQuantity(product.id, product.qty - 1);
+    }
   }
 
   function removeProduct() {
     removeFromCart(product.id);
-    toast.error("Removido do carrinho ");
+    toast.error("Removido do carrinho");
   }
 
   return (
     <div className="cart-product">
-      <img src={product.image} />
+      <img src={product.image} alt={product.title} />
       <div className="cart-product_info">
         <h3>{product.title}</h3>
         <p>Categoria: {product.category}</p>
-        <p className="qty">
-          Qtd:
-          <input
-            type="number"
-            value={product.qty}
-            onChange={inputHandler}
-            id="qty"
-          />
+        <p className="qtd">
+          Qtd:{" "}
+          <button onClick={decrementQuantity} className="minus">-</button>
+          <span>{product.qty}</span>
+          <button onClick={incrementQuantity} className="maximus">+</button>
         </p>
       </div>
       <p className="cart-product_price">
