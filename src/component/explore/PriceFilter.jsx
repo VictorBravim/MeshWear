@@ -7,10 +7,10 @@ function PriceFilter({ priceFlter, handlePriceFilter }) {
       <label htmlFor="price-filter">Ordenar por:</label>
       <select id="price-filter" value={priceFlter} onChange={handlePriceFilter}>
         <option value="default" disabled hidden>
-        Selecione uma opção
+        Preço
         </option>
-        <option value="high-to-low">(Preço) Do maior para o menor</option>
-        <option value="low-to-high">(Preço) Do menor para o maior</option>
+        <option value="high-to-low">Maior</option>
+        <option value="low-to-high">Menor</option>
       </select>
     </div>
   );

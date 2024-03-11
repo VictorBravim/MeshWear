@@ -24,6 +24,50 @@
   color: #fff;
 }
 
+/* Mantenha o restante do seu CSS inalterado e adicione o seguinte */
+
+.radio-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.radio-button:hover {
+  transform: translateY(-2px);
+}
+
+.radio-button input[type="checkbox"] {
+  display: none;
+}
+
+.radio-checkmark {
+  display: inline-block;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.radio-checkmark:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+.radio-button input[type="checkbox"]:checked ~ .radio-checkmark:before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
 @media (max-width: 800px) {
   .select-category_container {
     position: absolute;
@@ -38,6 +82,14 @@
     border-radius: 6px;
     cursor: pointer;
     border: 1px solid #999;
+
+    .radio-checkmark:before {
+      background-color: #ffffff;
+    }
+
+    .radio-checkmark {
+      background-color: #000;
+    }
 
     h4 {
       color: #000;
@@ -66,6 +118,7 @@
 
     div.open {
       display: flex;
+      border-radius: 6px;
     }
   }
 }

@@ -13,24 +13,30 @@ function SelectCategory({ checkBoxState, handleCheckBox }) {
       <h4 onClick={handleCategoryClick}>Categoria</h4>
       <div className={isOpen ? "open" : ""}>
         <span className="category-option">
-          <input
-            type="checkbox"
-            id="category-men"
-            name="men"
-            checked={checkBoxState.men}
-            onChange={handleCheckBox}
-          />
-          <label htmlFor="category-men">Homen</label>
+          <label className="radio-button">
+            <input
+              type="checkbox"
+              id="category-men"
+              name="men"
+              checked={checkBoxState.men}
+              onChange={handleCheckBox}
+            />
+            <span className="radio-checkmark"></span>
+            <span className="radio-label">Homem</span>
+          </label>
         </span>
         <span className="category-option">
-          <input
-            type="checkbox"
-            id="category-women"
-            name="women"
-            checked={checkBoxState.women}
-            onChange={handleCheckBox}
-          />
-          <label htmlFor="category-women">Mulher</label>
+          <label className="radio-button">
+            <input
+              type="checkbox"
+              id="category-women"
+              name="women"
+              checked={checkBoxState.women}
+              onChange={handleCheckBox}
+            />
+            <span className="radio-checkmark"></span>
+            <span className="radio-label">Mulher</span>
+          </label>
         </span>
       </div>
     </div>
