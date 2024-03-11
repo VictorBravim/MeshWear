@@ -4,11 +4,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-}
-
-.home-main>* {
-  width: 50%;
+  background-image: url('/src/assets/img/bg.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 1050px) {

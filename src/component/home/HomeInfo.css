@@ -3,10 +3,12 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: black;
+  padding: 3%;
 }
 
 .info-txt h2 {
-  font-size: clamp(3.4rem, 4vw + 1rem, 5.2rem);
+  font-size: 5vw;
   font-family: "Bebas Neue", sans-serif;
   line-height: 1;
   color: #fff;

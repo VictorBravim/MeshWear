@@ -7,13 +7,12 @@ function HomeInfo() {
     <article className="home-info">
       <div className="info-txt">
         <h2>
-        Experimente o auge da moda com nossas peças de design requintadas.
+        Experimente 
+        <br />
+        o auge da moda.
         </h2>
         <p>
-        Onde estilo, sofisticação, exclusividade é a vanguarda do nosso
-          coleção. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Repellat quaerat nostrum quia nam earum, libero, expedita impedit
-          delectus provident quo eveniet.
+        Onde estilo, sofisticação, exclusividade.
         </p>
       </div>
       <button className="explore-clothing_btn">
