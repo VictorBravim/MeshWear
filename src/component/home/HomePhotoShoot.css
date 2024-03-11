@@ -1,4 +1,15 @@
 .photoshoot-container {
-  width: 40%;
+  width: 20%;
+  white-space: nowrap;
 }
 
+.photoshoot-container img {
+  width: 100%; 
+  height: auto; 
+}
+
+@media (max-width: 800px) {
+  .photoshoot-container {
+    display: none;
+  }
+}

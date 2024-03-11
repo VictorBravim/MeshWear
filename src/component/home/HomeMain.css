@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 15%;
   background-image: url('/src/assets/img/bg.png');
   background-size: cover;
   background-position: center center;
