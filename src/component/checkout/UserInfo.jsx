@@ -51,12 +51,12 @@ function ShippingAddress() {
     <div className="shipping-address_container">
       <h3>Endereço para envio</h3>
       <div className="shipping-address_wrapper">
-        <input type="name" placeholder="First name" id="firstname" />
-        <input type="name" placeholder="Last name" id="lastname" />
-        <input type="name" placeholder="Address" id="address" />
-        <input type="name" placeholder="City" id="city" />
+        <input type="name" placeholder="Primeiro nome" id="firstname" />
+        <input type="name" placeholder="Sobrenome" id="lastname" />
+        <input type="name" placeholder="Endereço" id="address" />
+        <input type="name" placeholder="Cidade" id="city" />
         <button className="checkout-btn" onClick={checkoutHandler}>
-          Checkout
+          Finalizar Compra
         </button>
       </div>
     </div>

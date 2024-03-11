@@ -6,8 +6,8 @@ import OrderSummary from "../component/checkout/OrderSummary";
 function Checkout() {
   return (
     <div className="container checkout-container">
-      <UserInfo />
       <OrderSummary />
+      <UserInfo />
     </div>
   );
 }
