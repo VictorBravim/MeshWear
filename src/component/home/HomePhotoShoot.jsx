@@ -2,15 +2,14 @@ import React from "react";
 import Slider from "react-slick";
 import "./HomePhotoShoot.css";
 
-import photo1 from "/src/assets/img/home-photo-1.webp";
-import photo2 from "/src/assets/img/home-photo-2.webp";
-import photo3 from "/src/assets/img/home-photo-3.webp";
+import photo1 from "/src/assets/img/mulher.png";
+import photo2 from "/src/assets/img/homen.png";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function HomePhotoShoot() {
-  const images = [photo1, photo2, photo3];
+  const images = [photo1, photo2];
 
   const settings = {
     dots: true,
@@ -24,7 +23,7 @@ function HomePhotoShoot() {
     <div className="photoshoot-container">
       <Slider {...settings}>
         {images.map((image, index) => (
-          <div key={index} className="img-slider">
+          <div key={index}>
             <img src={image} alt={`Model Photograph ${index + 1}`} />
           </div>
         ))}
