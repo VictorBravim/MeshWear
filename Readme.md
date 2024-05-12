@@ -36,10 +36,10 @@ npm run dev
 
 ## 🛠️ Project Structure
 
-- Explorar Produtos: Página principal que exibe produtos obtidos da FakeStore API.
-- Detalhes do Produto: Página de visualização detalhada para cada produto.  
-- Carrinho de Compras: Utiliza o Zustand para gerenciar o estado do carrinho.
-- Checkout: Página de checkout para revisar os produtos no carrinho e finalizar a compra.
+- Explore Products: Main page that displays products obtained from the FakeStore API.
+- Product Details: Detailed view page for each product.
+- Shopping Cart: Use Zustand to manage the status of the cart.
+- Checkout: Checkout page to review the products in the cart and finalize the purchase.
 
 ## 📄 License
 
