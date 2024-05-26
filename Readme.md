@@ -1,6 +1,6 @@
 # 🏪 MeshWear
 
-![211shots_so](https://github.com/VictorBravim/MeshWear/assets/122113588/e7056a11-6823-467b-a596-051dede91ee3)
+![image 11](https://github.com/VictorBravim/MeshWear/assets/122113588/557d001b-eae6-4196-851a-56a8bbb38e0a)
 
 ## 🚀 Overview
 
